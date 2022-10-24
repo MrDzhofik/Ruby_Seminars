@@ -16,7 +16,7 @@ RSpec.describe StringSwapper do
     context 'when param is empty' do # Когда параметры пустые
       it 'should raise error' do # Должно вернуть ошибку
         expect { described_class.swap_words(nil) }.to raise_error(NoMethodError) # () и {} отличаются
-      end # () - код должен выполниться 
+      end # () - код должен выполниться
     end # {} - код может аварийно завершиться
   end
 end
